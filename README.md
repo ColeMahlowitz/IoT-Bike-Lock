@@ -12,7 +12,7 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**What you will need:** 
+#What you will need:
 
 1) [Electric Imp](http://www.adafruit.com/products/1129)
 
@@ -53,11 +53,11 @@ Eagle:
 
 --------------------------------------------------------------------------------------------------------------------
 
-**How does it work?**
+#How does it work?
 
 The Electric Imp development platform is unique in that the user codes two different portions for its function: the device portion and the agent portion. The device code controls the functionality of the device itself and how it behaves in its environment. Here, in the device portion, is where you would code the imp to respond to certain stimuli. Later on, I will include the code for the agent portion which governs how the Imp communicates with the server and the internet. 
 
-Below is the portion of code that you can copy into the **device** section of the Electric Imp environment on the right hand side of the page:
+Below is the portion of code that you can copy into the **device** section of the Electric Imp environment on the right hand side of the page once you login to your account:
 
 
 #Device Code
