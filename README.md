@@ -41,7 +41,9 @@ Once you have soldered male pins to the development board, you can connect it to
 ![alt tag](https://cloud.githubusercontent.com/assets/11773778/6975473/76e1ea74-d96a-11e4-9800-8eb7a6dfec8f.png)
 
 
-Eagle:
+*Eagle*
+
+![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6975725/cd04faa6-d96d-11e4-8523-756535eacf74.png)
 
 
 
