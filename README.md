@@ -1,5 +1,7 @@
 # IoT-Bike-Lock
-Electric Imp IoT Bike Lock
+
+
+#Introduction
 
 Hello bicycle and motorcycle enthusiasts!!!
 
