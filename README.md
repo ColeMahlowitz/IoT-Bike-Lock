@@ -134,7 +134,7 @@ function send(to, message, callback = null) {
     local twilio_url = format("https://api.twilio.com/2010-04-01/Accounts/%s/SMS/Messages.json&amp;quot&quot;", TWILIO_ACCOUNT_SID);
     
     local auth = "Basic " + http.base64encode(TWILIO_ACCOUNT_SID+":"+TWILIO_AUTH_TOKEN);
-    local body = http.urlencode({From=TWILIO_FROM_NUMBER, To="+________________", Body=message}); // INSERT YOUR PERSONAL PHONE NUMBER HERE
+    local body = http.urlencode({From=TWILIO_FROM_NUMBER, To="+________________", Body=message});       // INSERT YOUR PERSONAL PHONE NUMBER HERE
     local req = http.post(twilio_url, {Authorization=auth}, body);
     local res = req.sendsync();
     //server.log(auth);
@@ -188,6 +188,8 @@ function sendText(whatever) {
 device.on("cut", sendText);
 ```
 
+
+You will need to copy and paste this into the *agent* section of the Imp environment online and insert all of the specified information into the blank "_____________" sections. 
 
 
 
