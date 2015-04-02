@@ -194,15 +194,12 @@ device.on("cut", sendText);
 
 You will need to copy and paste this into the *agent* section of the Imp environment online and insert all of the specified information into the blank "_____________" sections. More information about your account SID and the authors token can be found [here](https://www.twilio.com/help/faq/twilio-basics/what-is-the-auth-token-and-how-can-i-change-it)
 
-
-
-#How does it work?
-
+**What's going on in the agent code?**
 
 Once we wakeup the device and ping the server with the variable "status" stored in the second parameter of  agent.send(), we interface with Twilio via the internet and tell Twilio to send us a text with a message we specified.
 In order to do so, we need to include all of the parameters that the squirrel language will need via the [Twilio API](https://github.com/electricimp/Twilio). These are found under the Twilio class at the top of the agent code.
 
-When the agent code first reaches [device.on](https://electricimp.com/docs/api/device/on/)("cut", sendText), 
+When the agent code first reaches [device.on](https://electricimp.com/docs/api/device/on/)("cut", sendText), it calls the sendText() method which executes Twilio's text messaging service via the "twilio.send" function.
 
 
 
