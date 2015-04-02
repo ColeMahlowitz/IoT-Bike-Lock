@@ -219,9 +219,20 @@ Once you build and run this code on your breadboard device and power the device,
 Essentially, this device was built to immediately alert me via text when my lock has been cut. It does so in these steps:
 
 1) device stays dormant until it detects a break in continuity
+
 2) device pings to the server that continuity has been broken
+
 3) server runs the agent code and communicates with twilio over the Imp cloud
+
 4) Twilio sends us a text message
+
+
+
+This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via 
+
+
+
+
 
 
 
