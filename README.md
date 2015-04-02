@@ -125,7 +125,7 @@ server.log(http.agenturl());
 
 class Twilio {
 
-   TWILIO_ACCOUNT_SID = "INSERT YOUR TWILIO ACCOUNT SID HERE" 
+   TWILIO_ACCOUNT_SID = "[INSERT YOUR TWILIO ACCOUNT SID HERE](https://www.twilio.com/help/faq/twilio-basics/what-is-the-auth-token-and-how-can-i-change-it)" 
    TWILIO_AUTH_TOKEN = "INSERT YOUR AUTHORS TOKEN HERE" 
    TWILIO_FROM_NUMBER = "+INSERT YOUR TWILIO PHONE NUMBER HERE";
 
