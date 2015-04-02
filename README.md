@@ -125,16 +125,16 @@ server.log(http.agenturl());
 
 class Twilio {
 
-   TWILIO_ACCOUNT_SID = "[INSERT YOUR TWILIO ACCOUNT SID HERE](https://www.twilio.com/help/faq/twilio-basics/what-is-the-auth-token-and-how-can-i-change-it)" 
-   TWILIO_AUTH_TOKEN = "INSERT YOUR AUTHORS TOKEN HERE" 
-   TWILIO_FROM_NUMBER = "+INSERT YOUR TWILIO PHONE NUMBER HERE";
+   TWILIO_ACCOUNT_SID = "____________________________"  // INSERT YOUR TWILIO ACCOUNT SID HERE
+   TWILIO_AUTH_TOKEN = "______________________________" // INSERT YOUR TWILIO AUTH TOKEN HERE
+   TWILIO_FROM_NUMBER = "+_______________";             // INSERT YOUR TWILIO PHONE NUMBER HERE
 
 
 function send(to, message, callback = null) {
     local twilio_url = format("https://api.twilio.com/2010-04-01/Accounts/%s/SMS/Messages.json&amp;quot&quot;", TWILIO_ACCOUNT_SID);
     
     local auth = "Basic " + http.base64encode(TWILIO_ACCOUNT_SID+":"+TWILIO_AUTH_TOKEN);
-    local body = http.urlencode({From=TWILIO_FROM_NUMBER, To="+INSERT YOUR OWN PHONE NUMBER HERE", Body=message});
+    local body = http.urlencode({From=TWILIO_FROM_NUMBER, To="+________________", Body=message}); // INSERT YOUR PERSONAL PHONE NUMBER HERE
     local req = http.post(twilio_url, {Authorization=auth}, body);
     local res = req.sendsync();
     //server.log(auth);
@@ -148,8 +148,8 @@ function send(to, message, callback = null) {
 
 function requestHandler(request, response) {
    try {
-    numberToSendTo <- "(INSERT YOUR OWN PHONE NUMBER HERE)";
-    message <- "Quick! Your lock has been cut!!!!"
+    numberToSendTo <- "_______________";                 // INSERT YOUR PERSONAL PHONE NUMBER HERE
+    message <- "Quick! Your lock has been cut!!!!!!";
        
     local response = twilio.send(numberToSendTo, message)
         
@@ -166,17 +166,17 @@ function sendText(whatever) {
     // Twilio
     twilioURL <- "https://USER:PASS@api.twilio.com/2010-04-01/Accounts/ID/Messages.json";
     twilioHeaders <- { "Content-Type": "application/x-www-form-urlencoded" };
-    twilioNumber <- "INSERT YOUR TWILIO PHONE NUMBER HERE";
+    twilioNumber <- "_____________";                  // INSERT YOUR TWILIO PHONE NUMBER HERE
     
     
     server.log(whatever);
     
-    numberToSendTo <- "INSERT YOUR TWILIO PHONE NUMBER HERE";
+    numberToSendTo <- "_____________";               // INSERT YOUR TWILIO PHONE NUMBER HERE
     
     // Twilio Params
     message <- "Quick! Your lock has been cut!!!";
-    authToken <- "INSERT YOUR AUTHORS TOKEN HERE";
-    accSid <- "INSERT YOUR ACCOUNT SID HERE";
+    authToken <- "________________________";         // INSERT YOUR TWILIO AUTHORS TOKEN HERE
+    accSid <- "___________________________";         // INSERT YOUR TWILIO ACCOUNT SID HERE
 
     // Twilio Init
     twilio <- Twilio(accSid, authToken, numberToSendTo)
