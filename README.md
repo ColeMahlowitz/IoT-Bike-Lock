@@ -90,7 +90,75 @@ essentially...... when the thief breaks the lock, they separate the wire connect
 
 
 
+```
+// Our url
+server.log(http.agenturl());
 
+class Twilio {
+    
+
+   TWILIO_ACCOUNT_SID = "AC76611a1e8c105a1f6a3211fb1dd143f7" // your twilio account SID goes here
+   TWILIO_AUTH_TOKEN = "95006c0aa97a973fd82cdfe92c0fc5b9" // your twilio passkey goes here
+   TWILIO_FROM_NUMBER = "+12057915220" // your twilio phone number goes here
+
+
+function send(to, message, callback = null) {
+    local twilio_url = format("https://api.twilio.com/2010-04-01/Accounts/%s/SMS/Messages.json&amp;quot&quot;", TWILIO_ACCOUNT_SID);
+    local auth = "Basic " + http.base64encode(TWILIO_ACCOUNT_SID+":"+TWILIO_AUTH_TOKEN);
+    local body = http.urlencode({From=TWILIO_FROM_NUMBER, To="+15089346028", Body=message});
+    local req = http.post(twilio_url, {Authorization=auth}, body);
+    local res = req.sendsync();
+    //server.log(auth);
+        if(res.statuscode != 201) {
+            server.log("error sending message: "+res.body);
+        }
+}
+
+
+
+}
+
+function requestHandler(request, response) {
+   try {
+    numberToSendTo <- "5089346028";
+    message <- "Your lock has been cut!"
+       
+    local response = twilio.send(numberToSendTo, message)
+        
+    server.log(response.statuscode + ": " + response.body)
+    device.send("cut", "hello");
+    response.send(200);
+    }
+    catch(err) {
+        response.send(500);
+    }
+}
+
+function sendText(whatever) {
+    // Twilio
+    twilioURL <- "https://USER:PASS@api.twilio.com/2010-04-01/Accounts/ID/Messages.json";
+    twilioHeaders <- { "Content-Type": "application/x-www-form-urlencoded" };
+    twilioNumber <- "2057915220";
+    
+    
+    server.log(whatever);
+    
+    numberToSendTo <- "2057915220";
+    
+    // Twilio Params
+    message <- "Oh Noez ur Lok haz bin Kut!!1!11!!!";
+    authToken <- "95006c0aa97a973fd82cdfe92c0fc5b9";
+    accSid <- "AC76611a1e8c105a1f6a3211fb1dd143f7";
+
+    // Twilio Init
+    twilio <- Twilio(accSid, authToken, numberToSendTo)
+    twilio.send(numberToSendTo, message, function(response) {
+         server.log(response.statuscode + " - " + response.body);
+    });
+}
+
+device.on("cut", sendText);
+```
 
 
 
