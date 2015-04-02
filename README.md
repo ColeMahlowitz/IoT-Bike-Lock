@@ -47,7 +47,7 @@ Once you have soldered male pins to the development board, you can connect it to
 
 
 
-
+*notice in both images there is a long snaky looking wire from pin3 of the op amp (the non-inverting input pin) to ground. This is the wire that will snake along your actual chain which will be our detect wire!*
 
 
 
