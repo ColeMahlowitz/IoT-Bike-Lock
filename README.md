@@ -189,7 +189,9 @@ device.on("cut", sendText);
 ```
 
 
-You will need to copy and paste this into the *agent* section of the Imp environment online and insert all of the specified information into the blank "_____________" sections. 
+
+
+You will need to copy and paste this into the *agent* section of the Imp environment online and insert all of the specified information into the blank "_____________" sections. More information about your account SID and the authors token can be found [here](https://www.twilio.com/help/faq/twilio-basics/what-is-the-auth-token-and-how-can-i-change-it)
 
 
 
