@@ -97,7 +97,7 @@ Then, I make a variable called "status" and store in it the voltage I read from 
 
 
 
-**...wait...how will I generate a digital "HIGH" when I cut/disconnect a wire?**
+**...wait.......how do you generate a digital "HIGH" when you cut/disconnect a wire?**
 
 
 
@@ -200,6 +200,29 @@ Once we wakeup the device and ping the server with the variable "status" stored 
 In order to do so, we need to include all of the parameters that the squirrel language will need via the [Twilio API](https://github.com/electricimp/Twilio). These are found under the Twilio class at the top of the agent code.
 
 When the agent code first reaches [device.on](https://electricimp.com/docs/api/device/on/)("cut", sendText), it calls the sendText() method which executes Twilio's text messaging service via the "twilio.send" function.
+
+Notice how both your personal phone number and your Twilio phone number HAVE a "+" in front of them in the Twilio class at the top of the code and DON'T HAVE a "+" in the sendText function. This will not work if you don't have those +'s in the right places!
+
+--------------------------------------------------------------------------------------------------------------------
+
+#Hooking Up the Device to Your Bicycle Lock
+
+
+Once you build and run this code on your breadboard device and power the device, you should recieve a text message via Twilio when you disconnect the op amp's pin3 to ground. In order to make this work as a continuity breaker, we have to connect a wire from ground on the device, loop it all the way around your chain (underneath your clotch cover ofcourse so it's not visible), and connect it back to pin3 of the op amp on the device. This way it is impossible for the thief to take your bike without separating pin3 from ground, thus triggering the Imp to ping the server and make Twilio send us a text!! Yeahhh!!!!!!11!1!!!11111!!!
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+#Conclusion
+
+
+Essentially, this device was built to immediately alert me via text when my lock has been cut. It does so in these steps:
+
+1) device stays dormant until it detects a break in continuity
+2) device pings to the server that continuity has been broken
+3) server runs the agent code and communicates with twilio over the Imp cloud
+4) Twilio sends us a text message
+
 
 
 
