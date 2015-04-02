@@ -228,7 +228,7 @@ Essentially, this device was built to immediately alert me via text when my lock
 
 
 
-This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via 
+This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via text if......let's say.........when any kind of security lock has been opened, or if the integrity of some building structure has been compromised. 
 
 
 Right now, this is a stage 1 prototype, so there are a few things that could be implimented in the future to make this much more usable. For example, the user needs to connect pin3 to ground before powering up the device lest they send a text to themselves upon chaining up their bike. It would also be really cool to disable this feature via your phone which would require some callback capabilities. 
@@ -240,9 +240,13 @@ Right now, this is a stage 1 prototype, so there are a few things that could be 
 #Rescources
 
 -https://electricimp.com/docs/gettingstarted/quickstartguide/
+
 -http://www.ee.surrey.ac.uk/Projects/CAL/op-amps/comparators/comparat.htm
+
 -http://alexba.in/blog/2014/01/06/receiving-sms-notifications-from-your-washer/
+
 -https://electricimp.com/docs/
+
 -https://github.com/electricimp/Twilio
 
 
