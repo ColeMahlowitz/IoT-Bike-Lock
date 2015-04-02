@@ -36,8 +36,9 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 Once you have soldered male pins to the development board, you can connect it to your breadboard and wire up the device according to the schematic and image below:
 
 
-Fritzing:
+*Fritzing*
 
+![alt tag](https://cloud.githubusercontent.com/assets/11773778/6975473/76e1ea74-d96a-11e4-9800-8eb7a6dfec8f.png)
 
 
 Eagle:
