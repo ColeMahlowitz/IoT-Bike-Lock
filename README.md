@@ -7,6 +7,8 @@ This project was inspired out of the frustration I've experience with bicycle th
 
 The device is built on the Electric Imp platform and uses a rather simple implementation. It works with as a continuity breaker; when a thief has broken and/or cut my bicycle lock, the electric imp senses a change in voltage on a particular pin and pings an SMS text service to send me a text saying that the lock has been cut. From that piont, I can immediately proceed to retrieving my bicycle/moped before it's taken to nowheresville and scrapped for parts!
 
+*nota bene*, before starting this tutorial, you should be familiar with the Imp environment by checking out the [quickstart](https://electricimp.com/docs/gettingstarted/quickstartguide/) guide. You should also make a [Twilio account](https://www.twilio.com/try-twilio) which is the text SMS service I am using for this device
+
 ---------------------------------------------------------------------------------------------------------------------
 
 **What you will need:** 
@@ -21,7 +23,6 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 
 
-For anyone new to Electric Imp, please check out the [quickstart](https://electricimp.com/docs/gettingstarted/quickstartguide/) guide.
 
 
 
@@ -95,7 +96,10 @@ essentially...... when the thief breaks the lock, they separate the wire connect
 --------------------------------------------------------------------------------------------------------------------
 
 
-Okaaaay, so now that we are able to wake the 
+#Agent Code
+
+Okaaaay, so now that we are able to wake the Imp up and established a communication with the server (using agent.send(string, object) ), we can now code the *agent* portion of the Imp to determine how it will communicate over the internet.
+
 
 
 ```
