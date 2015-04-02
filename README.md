@@ -18,11 +18,11 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 2) [Electric imp April dev board](http://www.adafruit.com/products/1130?gclid=CLzq7sOB2MQCFZEdgQodVnUA9w)
 
-3) Small breadboard and a couple jumper wires:
+3) Small breadboard and a couple jumper wires
 
-4) [Any general purpose op amp](http://www.digikey.com/product-detail/en/LF411CN%2FNOPB/LF411CN%2FNOPB-ND/8891)
+4) [Any general purpose op amp](http://www.digikey.com/product-detail/en/LF411CN%2FNOPB/LF411CN%2FNOPB-ND/8891). I am using the LM2904 low power op amp.
 
-5) A [Twilio account](https://www.twilio.com/try-twilio)
+5) A Twilio account ([sign in](https://www.twilio.com/login) / [sign up](https://www.twilio.com/try-twilio))
 
 6) [An Electric Imp user account](https://ide.electricimp.com/login)
 
@@ -31,9 +31,9 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 --------------------------------------------------------------------------------------------------------------------
 
+#Step 1: Create your Electric Imp account
 
-
-Breadboard image and accompanying schematic:
+-Visit www.electricimp.com and crea
 
 
 
