@@ -42,6 +42,9 @@ The Electric Imp development platform is unique in that the user codes two diffe
 Below is the portion of code that you can copy into the **device** section of the Electric Imp environment on the right hand side of the page:
 
 
+#Device Code
+
+
 ```
 function readPin() {
     
