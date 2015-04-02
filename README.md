@@ -79,7 +79,7 @@ Then, I make a variable called "status" and store in it the voltage I read from 
 
 
 
-I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup every second or so and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs code when it recieves a HIGH. 
+I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup every second or so and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs and calls a function when it recieves a HIGH. 
 
 
 
