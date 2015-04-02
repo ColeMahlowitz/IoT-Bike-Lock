@@ -56,7 +56,7 @@ Eagle:
 # Seting up the Software Code
 
 
-The Electric Imp development platform is unique in that the user codes two different portions for its function: the device portion and the agent portion. The device code controls the functionality of the device itself and how it behaves in its environment. Here, in the device portion, is where you would code the imp to respond to certain stimuli. Later on, I will include the code for the agent portion which governs how the Imp communicates with the server and the internet. 
+The Electric Imp IDE platform is unique in that the user codes two different portions for its function: the device portion and the agent portion. The device code controls the functionality of the device itself and how it behaves in its environment. Here, in the device portion, is where you would code the imp to respond to certain stimuli. Later on, I will include the code for the agent portion which governs how the Imp communicates with the server and the internet. 
 
 Below is the portion of code that you can copy into the **device** section of the Electric Imp environment on the right hand side of the page once you login to your account:
 
@@ -231,7 +231,19 @@ Essentially, this device was built to immediately alert me via text when my lock
 This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via 
 
 
+Right now, this is a stage 1 prototype, so there are a few things that could be implimented in the future to make this much more usable. For example, the user needs to connect pin3 to ground before powering up the device lest they send a text to themselves upon chaining up their bike. It would also be really cool to disable this feature via your phone which would require some callback capabilities. 
 
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+#Rescources
+
+-https://electricimp.com/docs/gettingstarted/quickstartguide/
+-http://www.ee.surrey.ac.uk/Projects/CAL/op-amps/comparators/comparat.htm
+-http://alexba.in/blog/2014/01/06/receiving-sms-notifications-from-your-washer/
+-https://electricimp.com/docs/
+-https://github.com/electricimp/Twilio
 
 
 
