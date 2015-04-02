@@ -195,6 +195,11 @@ You will need to copy and paste this into the *agent* section of the Imp environ
 
 
 
+#How does it work?
+
+
+Once we wakeup the device and ping the server with the agent.send(), we include all of the parameters that the squirrel language will need in order to interface with Twilio via the [Twilio API](https://github.com/electricimp/Twilio).
+
 
 
 
