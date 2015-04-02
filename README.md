@@ -31,7 +31,7 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 --------------------------------------------------------------------------------------------------------------------
 
-#Assembling the Device
+#Assembling the Physical Device
 
 Once you have soldered male pins to the development board, you can connect it to your breadboard and wire up the device according to the schematic and image below:
 
@@ -53,7 +53,8 @@ Eagle:
 
 --------------------------------------------------------------------------------------------------------------------
 
-#How does it work?
+# Seting up the Software Code
+
 
 The Electric Imp development platform is unique in that the user codes two different portions for its function: the device portion and the agent portion. The device code controls the functionality of the device itself and how it behaves in its environment. Here, in the device portion, is where you would code the imp to respond to certain stimuli. Later on, I will include the code for the agent portion which governs how the Imp communicates with the server and the internet. 
 
