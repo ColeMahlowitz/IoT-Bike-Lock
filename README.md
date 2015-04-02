@@ -115,7 +115,7 @@ essentially...... when the thief breaks the lock, they separate the wire connect
 
 #Agent Code
 
-Okaaaay, so now that we are able to wake the Imp up and established a communication with the server (using agent.send(string, object) ), we can now code the *agent* portion of the Imp to determine how it will communicate over the internet.
+Okaaaay, so now that we are able to wake the Imp up and established a communication with the server (using agent.send(string, object) ), we can now code the *agent* portion of the Imp which runs on the Imp cloud and will determine how the Imp communicates via the internet.
 
 
 
@@ -198,7 +198,10 @@ You will need to copy and paste this into the *agent* section of the Imp environ
 #How does it work?
 
 
-Once we wakeup the device and ping the server with the agent.send(), we include all of the parameters that the squirrel language will need in order to interface with Twilio via the [Twilio API](https://github.com/electricimp/Twilio).
+Once we wakeup the device and ping the server with the variable "status" stored in the second parameter of  agent.send(), we interface with Twilio via the internet and tell Twilio to send us a text with a message we specified.
+In order to do so, we need to include all of the parameters that the squirrel language will need via the [Twilio API](https://github.com/electricimp/Twilio). These are found under the Twilio class at the top of the agent code.
+
+When the agent code first reaches [device.on](https://electricimp.com/docs/api/device/on/)("cut", sendText), 
 
 
 
