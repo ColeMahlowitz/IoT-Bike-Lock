@@ -39,7 +39,7 @@ Breadboard image and accompanying schematic:
 
 The Electric Imp development platform is unique in that the user codes two different portions for its function: the device portion and the agent portion. The device code controls the functionality of the device itself and how it behaves in its environment. Here, in the device portion, is where you would code the imp to respond to certain stimuli. Later on, I will include the code for the agent portion which governs how the Imp communicates with the server and the internet. 
 
-Below is the portion of code that you can copy into the *device* section of the Electric Imp environment on the right hand side of the page:
+Below is the portion of code that you can copy into the **device** section of the Electric Imp environment on the right hand side of the page:
 
 
 ```
@@ -71,7 +71,7 @@ This code governs the functionality of the device. Ok, so, when the device power
 
 Next in the readPin() function, we configure our newly created pin to be a digital input. This means that we are assigning that particular pin for a parcticular mode of operation. In this case, it will be used as a digital input which will recieve a 0 or a 1. More specifically, we are using [DIGITAL_IN_WAKEUP](https://electricimp.com/docs/api/hardware/pin/configure/) which is a specific function of the configure library. DIGITAL_IN_WAKEUP allows the device to enter a sleep state and only proceed with the following code when the configured pin recieves a digital HIGH. This demonstrates the event driven nature of the Imp. Please check [event driven programming](https://electricimp.com/docs/resources/eventprogramming/) for more info on event driven programming and how it corresponds with the Imp model.
 
-Then, I make a variable called "status" and store in it the voltage I read from the pin (which will be high when I arrive at this portion of the code). 
+Then, I make a variable called "status" and store in it the voltage I read from the pin (which will be high when I arrive at this portion of the code). The next portion of the code uses an "if" statement which sends a message to the *agent* (internet communicative) portion of the code once the variable stored in status (the voltage on pin1) is HIGH. The Imp device talks the the Imp agent via [agent.send](https://electricimp.com/docs/api/agent/send/)
 
 
 
@@ -88,6 +88,11 @@ In this configuration, I am using an LM2904 op amp as a comparator. If you refer
 
 essentially...... when the thief breaks the lock, they separate the wire connecting the op amps positive input to ground, causing the op amp to rail HIGH which wakes up the Imp!!!!!
 
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Okaaaay, so now that we are able to wake the 
 
 
 ```
