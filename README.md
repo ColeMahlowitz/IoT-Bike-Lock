@@ -1,7 +1,7 @@
 # IoT-Bike-Lock
 
 
-#Introduction
+**Introduction**
 
 Hello bicycle and motorcycle enthusiasts!!!
 
@@ -9,7 +9,6 @@ This project was inspired out of the frustration I've experience with bicycle th
 
 The device is built on the Electric Imp platform and uses a rather simple implementation. It works with as a continuity breaker; when a thief has broken and/or cut my bicycle lock, the electric imp senses a change in voltage on a particular pin and pings an SMS text service to send me a text saying that the lock has been cut. From that piont, I can immediately proceed to retrieving my bicycle/moped before it's taken to nowheresville and scrapped for parts!
 
-*nota bene*, before starting this tutorial, you should be familiar with the Imp environment by checking out the [quickstart](https://electricimp.com/docs/gettingstarted/quickstartguide/) guide. You should also make a [Twilio account](https://www.twilio.com/try-twilio) which is the text SMS service I am using for this device
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -23,12 +22,16 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 4) [Any general purpose op amp](http://www.digikey.com/product-detail/en/LF411CN%2FNOPB/LF411CN%2FNOPB-ND/8891)
 
+5) A [Twilio account](https://www.twilio.com/try-twilio)
+
+6) [An Electric Imp user account](https://ide.electricimp.com/login)
 
 
-
-
+*nota bene* if you aren't yet familiar with the Imp platform, please check out the [quickstart](https://electricimp.com/docs/gettingstarted/quickstartguide/) guide.
 
 --------------------------------------------------------------------------------------------------------------------
+
+
 
 Breadboard image and accompanying schematic:
 
