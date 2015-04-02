@@ -24,16 +24,28 @@ The device is built on the Electric Imp platform and uses a rather simple implem
 
 5) A Twilio account ([sign in](https://www.twilio.com/login) / [sign up](https://www.twilio.com/try-twilio))
 
-6) [An Electric Imp user account] (sign in(https://ide.electricimp.com/login)
+6) [An Electric Imp user account] (https://ide.electricimp.com/login)
 
 
 *nota bene* if you aren't yet familiar with the Imp platform, please check out the [quickstart](https://electricimp.com/docs/gettingstarted/quickstartguide/) guide.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#Step 1: Create your Electric Imp account
+#Assembling the Device
 
--Visit www.electricimp.com and crea
+Once you have soldered male pins to the development board, you can connect it to your breadboard and wire up the device according to the schematic and image below:
+
+
+Fritzing:
+
+
+
+Eagle:
+
+
+
+
+
 
 
 
