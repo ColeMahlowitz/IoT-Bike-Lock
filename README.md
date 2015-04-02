@@ -79,7 +79,7 @@ Then, I make a variable called "status" and store in it the voltage I read from 
 
 
 
-I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs code when it recieves a HIGH. 
+I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup every second or so and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs code when it recieves a HIGH. 
 
 To do this, I came up with a little engineering fix; check out the image below:
 
@@ -92,7 +92,7 @@ To do this, I came up with a little engineering fix; check out the image below:
 
 
 
-
+In this configuration, I am using an LM2904 op amp as a comparator. If you refer to the schematic and fritzing image at the top of the tutorial, you will notice that both the inverting input (pin2) and the non inverting input (pin3) of the op amp are both tied to ground. Because they are 
 
 
 
