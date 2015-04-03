@@ -38,7 +38,7 @@ Once you have soldered male pins to the development board, you can connect it to
 
 *Fritzing*
 
-![alt tag](https://cloud.githubusercontent.com/assets/11773778/6975473/76e1ea74-d96a-11e4-9800-8eb7a6dfec8f.png)
+![alt tag](https://cloud.githubusercontent.com/assets/11773778/6984997/7c0c222a-d9fc-11e4-9a36-1eebf2fd6e25.png)
 
 
 *Eagle*
