@@ -107,11 +107,12 @@ Then, I make a variable called "status" and store in it the voltage I read from 
 
 
 
-I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup every second or so and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs and calls a function when it recieves a HIGH. 
+I could have easily connected pin1 to voltage and written the code to text me when the pin goes low (when the lock has been cut and the pin has been separated from voltage) and just coded the imp to wakeup every second or so and check the pin status to see if it was high. This would have worked, but would have drained the battery much quicker than using DIGITAL_IN_WAKEUP which puts the Imp into a sleep state and only runs and calls a function when it recieves a HIGH input. 
 
 
 
-In this configuration, I am using an LM2904 op amp as a comparator. If you refer to the schematic and fritzing image at the top of the tutorial, you will notice that both the inverting input (pin2) and the non inverting input (pin3) of the op amp are both tied to ground. Because they are referenecd to the same point, the output of the op amp which is connected to our wakeup pin is LOW. When the thief cuts the lock (breaking the long wire which snakes from pin3 to ground), the op amp will rail HIGH because the voltage at that pin will be floating and effectively higher than the voltage on pin2 (which is always tied to ground). 
+In this configuration, I am using the 358 op amp as a comparator. If you refer to the schematic and fritzing image at the top of the tutorial, you will notice that only the non inverting input (pin3) of the op amp is tied to ground. Because only the + pin of the op amp's input is tied to ground and the - pin is left floating, the voltage on the negative pin is effectively higher, causing the op amp to rail LOW. Once the thief cuts the lock and separates pin3 from ground, the output rails HIGH. 
+
 
 
 essentially...... when the thief breaks the lock, they separate the wire connecting the op amps positive input to ground, causing the op amp to rail HIGH which wakes up the Imp!!!!!
