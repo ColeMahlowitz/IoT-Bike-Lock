@@ -38,7 +38,7 @@ Once you have soldered male pins to the development board, you can connect it to
 
 *Fritzing*
 
-![alt tag](https://cloud.githubusercontent.com/assets/11773778/6984997/7c0c222a-d9fc-11e4-9a36-1eebf2fd6e25.png)
+![alt tag](https://cloud.githubusercontent.com/assets/11773778/6984998/7d700762-d9fc-11e4-86f9-5da2cd7b5131.png)
 
 
 *Eagle*
@@ -48,6 +48,9 @@ Once you have soldered male pins to the development board, you can connect it to
 
 
 *notice in both images there is a long snaky looking wire from pin3 of the op amp (the non-inverting input pin) to ground. This is the wire that will snake along your actual chain which will be our detect wire!*
+
+
+In terms of op amp selection, you can use any general op amp. I chose the lm358 dual low power op amp because I already had it in my posetion. Most typical single op amps will have their output on pin 5 or 6, so please check your op amps datasheet. The output for the LM358's first op amp is pin1 which is connected to the April's pin1 as seen in the Fritzing and Eagle images.
 
 
 
