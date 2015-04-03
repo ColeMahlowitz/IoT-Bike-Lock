@@ -43,7 +43,7 @@ Once you have soldered male pins to the development board, you can connect it to
 
 *Eagle*
 
-![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6975725/cd04faa6-d96d-11e4-8523-756535eacf74.png)
+![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6984997/7c0c222a-d9fc-11e4-9a36-1eebf2fd6e25.png)
 
 
 
