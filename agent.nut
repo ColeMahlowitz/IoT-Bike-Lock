@@ -24,21 +24,6 @@ function send(to, message, callback = null) {
 }
 
 
-function requestHandler(request, response) {
-   try {
-    numberToSendTo <- "_______________";                 // INSERT YOUR PERSONAL PHONE NUMBER HERE
-    message <- "Quick! Your lock has been cut!!!!!!";
-
-    local response = twilio.send(numberToSendTo, message)
-
-    server.log(response.statuscode + ": " + response.body)
-    device.send("cut", "hello");
-    response.send(200);
-    }
-    catch(err) {
-        response.send(500);
-    }
-}
 
 function sendText(whatever) {
     // Twilio
