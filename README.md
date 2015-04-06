@@ -55,6 +55,8 @@ In terms of op amp selection, you can use any general op amp. I chose the lm358 
 
 ![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6999374/8ff69adc-dbd6-11e4-8622-0a7ba3e6d7b5.JPG)
 
+![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6999375/9934b494-dbd6-11e4-8397-2f452757ffd9.JPG)
+
 
 And above are some photos of the actual device. The long yellow wire is the wire that you would snake along your actual bike lock. The wire itself doesn't neccesarily have to be discrete because it is impossible to remove the bike and not break the wire unless you know how to power the device on and off. 
 
@@ -223,7 +225,7 @@ Essentially, this device was built to immediately alert me via text when my lock
 
 
 
-This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via text if......let's say.........when any kind of security lock has been opened, or if the integrity of some building structure has been compromised. 
+This code is simple enough to be implemented wherever you need to be alerted that something has been broken. For example, I can use the exact same code to alert me via text if......let's say.........when any kind of security lock has been opened, or if the integrity of some building structure has been compromised etc.... 
 
 
 Right now, this is a stage 1 prototype, so there are a few things that could be implimented in the future to make this much more usable. For example, the user needs to connect pin3 to ground before powering up the device lest they send a text to themselves upon chaining up their bike. It would also be really cool to disable this feature via your phone which would require some callback capabilities. 
