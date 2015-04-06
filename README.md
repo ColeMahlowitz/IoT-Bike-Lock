@@ -231,6 +231,9 @@ This code is simple enough to be implemented wherever you need to be alerted tha
 Right now, this is a stage 1 prototype, so there are a few things that could be implimented in the future to make this much more usable. For example, the user needs to connect pin3 to ground before powering up the device lest they send a text to themselves upon chaining up their bike. It would also be really cool to disable this feature via your phone which would require some callback capabilities. 
 
 
+Any comment/suggestions/criticisms are welcome. Be kind, this is my first project on the Imp platform!
+
+
 
 --------------------------------------------------------------------------------------------------------------------
 
