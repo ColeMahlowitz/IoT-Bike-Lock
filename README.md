@@ -53,7 +53,10 @@ Once you have soldered male pins to the development board, you can connect it to
 In terms of op amp selection, you can use any general op amp. I chose the lm358 dual low power op amp because I already had it in my posetion. Most typical single op amps will have their output on pin 5 or 6, so please check your op amps datasheet. The output for the LM358's first op amp is pin1 which is connected to the April's pin1 as seen in the Fritzing and Eagle images.
 
 
+![alt tag] (https://cloud.githubusercontent.com/assets/11773778/6999374/8ff69adc-dbd6-11e4-8622-0a7ba3e6d7b5.JPG)
 
+
+And above are some photos of the actual device. The long yellow wire is the wire that you would snake along your actual bike lock. The wire itself doesn't neccesarily have to be discrete because it is impossible to remove the bike and not break the wire unless you know how to power the device on and off. 
 
 
 
